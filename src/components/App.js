@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'proptypes';
 import Footer from './Footer';
 import AddTodo from './AddTodo';
 import VisibleTodoList from './VisibleTodoList';
@@ -6,7 +7,7 @@ import VisibleTodoList from './VisibleTodoList';
 const App = () => (
   <div>
     <AddTodo />
-    <VisibleTodoList />
+    <VisibleTodoList filter="all" />
     <Footer />
   </div>
 );

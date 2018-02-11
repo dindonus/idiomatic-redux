@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'proptypes';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 
@@ -17,10 +18,12 @@ const AddTodo = ({ dispatch }) => {
           input.value = '';
         }}
       >
-        <input ref={node => { input = node; }} />
-        <button type="submit">
-          Add Todo
-        </button>
+        <input
+          ref={node => {
+            input = node;
+          }}
+        />
+        <button type="submit">Add Todo</button>
       </form>
     </div>
   );
